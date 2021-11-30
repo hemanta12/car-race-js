@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(104, 96, 96);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.car-race-game {
+    position: relative;
+}
+
+.score-screen {
+    width: 250px;
+    height: 200px;
+    border: 1px solid grey;
+    padding: 15px;
+    background-color: rgb(51, 44, 44);
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 10vw;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.start-screen {
+    border-radius: 50%;
+    height: 150px;
+    width: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.623);
+    text-align: center;
+    background-color: rgb(51, 44, 44);
+    position: absolute;
+    top: 20vh;
+    left: 43vw;
+    z-index: 100;
+    /* border: 3px solid white; */
+}
+
+.start-screen h3 {
+    margin-top: 30%;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.start-screen:hover,
+.levels button:hover:not([disabled]) {
+    cursor: pointer;
+    background-color: #008351;
+    transition: 0.3s ease-out;
+    color: white;
+}
+
+.clicked {
+    background-color: rgb(3, 80, 80);
+    color: white;
+}
+
+.levels {
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+}
+
+.levels button {
+    padding: 10px;
+    width: 90px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.gamearea {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(43, 35, 35);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 10px solid #ebdf78;
+    border-right: 10px solid #ebdf78;
+    outline: 10px solid rgb(43, 35, 35);
+}
+
+.car {
+    width: 50px;
+    height: 110px;
+    position: absolute;
+    bottom: 60px;
+    background-image: url(../images/redcar.png);
+    background-size: cover;
+}
+
+.lines {
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 195px;
+}
+
+.enemy {
+    width: 50px;
+    height: 115px;
+    position: absolute;
+    bottom: 120px;
+    background-image: url(../images/yellow-car.png);
+    background-size: cover;
+}
